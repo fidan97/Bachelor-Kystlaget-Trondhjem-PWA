@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #94a3b8;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  scroll-snap-stop: always;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* custom css for react slick */
+.slick-dots {
+  bottom: unset !important;
+  top: 100%;
+}
+.slick-dots li {
+  margin: 0 10px !important;
+}
+
+.slick-dots li button:before {
+  width: 30px !important;
+  border-radius: 5px;
+  height: 5px !important;
+  content: "" !important;
+  background: #636c78;
+  opacity: 1 !important;
+  color: transparent !important;
+}
+.slick-dots li.slick-active button:before {
+  background: #9dff00;
+  color: transparent !important;
+}
+
+/* custom css for date picker */
+/* hide date picker static range */
+
+.rdrDefinedRangesWrapper {
+  display: none !important;
+}
+.rdrCalendarWrapper {
+  width: 100%;
+}
+.rdrMonths {
+  gap: 10px;
+}
+.rdrMonth {
+  width: 100%;
+  padding: 0 !important;
+}
+
+.rdrNextPrevButton.rdrPprevButton,
+.rdrNextPrevButton.rdrNextButton {
+  background: #1f3357;
+}
+.rdrPprevButton i {
+  border-color: transparent #aad922 transparent transparent;
+}
+.rdrNextButton i {
+  border-color: transparent transparent transparent#AAD922;
+}
+.rdrMonthAndYearPickers select {
+  color: white;
+  border: 1px solid white;
+  background: #17253e;
+  border-radius: 8px;
+}
+.rdrMonthAndYearPickers select:hover {
+  background: #17253e;
+}
+.rdrDayNumber span {
+  color: #aad922;
+  font-weight: 600 !important;
+}
+.rdrDayDisabled .rdrDayNumber span {
+  color: #aeb9bf;
+}
+
+@media (max-width: 426px) {
+  .rdrMonths {
+    flex-direction: column;
+    height: 300px;
+    overflow-x: scroll;
+  }
+  .homeCalendar .rdrMonths {
+    height: auto;
+    padding: 0.4rem;
+  }
+  .rdrNextPrevButton {
+    margin: 0 !important;
+  }
+}
