@@ -1,0 +1,35 @@
+{
+  "short_name": "Boat Booking",
+  "name": "Boat Booking",
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+
+  "start_url": "/",
+  "display": "standalone",
+  "description": "Boat Booking is a PWA that lets you to book boat for you",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

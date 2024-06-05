@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f6f7f9;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  scroll-snap-stop: always;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* custom css for react slick */
+.slick-dots {
+  white-space: nowrap;
+  overflow-x: auto;
+  width: 50%;
+  text-align: start;
+}
+.slick-dots li {
+  margin: 0 5px !important;
+  width: 10px !important;
+}
+.slick-dots .slick-active {
+  width: 30px !important;
+}
+.slick-dots li button {
+  width: 100% !important;
+  height: 100% !important;
+}
+.slick-dots li button:before {
+  width: 100% !important;
+  border-radius: 5px;
+  height: 5px !important;
+  content: "" !important;
+  background: #636c78;
+  opacity: 1 !important;
+  color: transparent !important;
+}
+.slick-dots li.slick-active button:before {
+  background: #9dff00;
+  color: transparent !important;
+}
+
+/* custom css for date picker */
+/* hide date picker static range */
+
+.rdrDefinedRangesWrapper {
+  display: none !important;
+}
+.rdrCalendarWrapper {
+  width: 100%;
+}
+.rdrMonths {
+  gap: 10px;
+}
+.rdrMonth {
+  width: 100%;
+  padding: 0 !important;
+}
+
+.rdrNextPrevButton.rdrPprevButton,
+.rdrNextPrevButton.rdrNextButton {
+  background: #f6f7f9;
+}
+.dark .rdrNextPrevButton.rdrPprevButton,
+.dark .rdrNextPrevButton.rdrNextButton {
+  background: #1f3357;
+}
+.dark .rdrPprevButton i {
+  border-color: transparent #729905 transparent transparent;
+}
+.dark .rdrNextButton i {
+  border-color: transparent transparent transparent#729905;
+}
+.rdrMonthAndYearPickers select {
+  background-image: none !important ;
+  border-radius: 8px;
+  appearance: auto !important ;
+  font-size: 16px;
+}
+.dark .rdrMonthAndYearPickers select {
+  color: #f6f7f9;
+  background: #1f3357;
+}
+.dark .rdrMonthAndYearPickers select:hover {
+  background: #1f3357;
+}
+.rdrWeekDay {
+  color: #52595d;
+  font-weight: 700 !important;
+}
+.dark .rdrWeekDay {
+  color: white;
+}
+.rdrDayNumber span {
+  color: #5f8004;
+  font-weight: 700 !important;
+}
+.dark .rdrDayNumber span {
+  color: #b0ee07;
+}
+.rdrDayDisabled .rdrDayNumber span {
+  color: #aeb9bf;
+}
+
+@media (max-width: 426px) {
+  .rdrMonths {
+    flex-direction: column;
+    height: 300px;
+    overflow-x: scroll;
+  }
+  .homeCalendar .rdrMonths {
+    height: auto;
+    padding: 0.4rem;
+  }
+  .rdrNextPrevButton {
+    margin: 0 !important;
+  }
+}
+
+/* react select custom css */
+
+.css-13cymwt-control,
+.css-t3ipsp-control,
+.css-1nmdiq5-menu {
+  background: inherit !important;
+  border-color: inherit !important;
+}
