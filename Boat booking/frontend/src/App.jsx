@@ -81,11 +81,10 @@ const App = () => {
     errorMessage.value = null;
 
     try {
-      if (!user?.data.value) {
+      if (user?.data.value) {
         const response = await getUserFutureBookings({
           userId: user?.data?.value?.id,
         });
-
         if (response.status === 401) {
           throw Error("Auth Token expired! Please re-login");
         }

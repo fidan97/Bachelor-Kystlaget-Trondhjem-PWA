@@ -372,7 +372,7 @@ const Bookings = ({ currentUserBookings }) => {
       ) : null}
       <Popup
         icon={<HiOutlineCheck size={100} />}
-        iconClassName={"bg-secondary-600 text-white"}
+        iconClassName={"bg-secondary text-white"}
         isPopup={editSuccess}
         handlePopupAction={() => window.location.reload()}
         actionText={t("Go To Your Booking")}
@@ -381,7 +381,7 @@ const Bookings = ({ currentUserBookings }) => {
       />
       <Popup
         icon={<HiOutlineCheck size={100} />}
-        iconClassName={"bg-secondary-600 text-white"}
+        iconClassName={"bg-secondary text-white"}
         isPopup={deleteSuccess}
         handlePopupAction={() => window.location.reload()}
         actionText={t("Go To Your Booking")}
